@@ -1,6 +1,12 @@
 library(rvest)
 library(tidyverse)
 
+#functions
+
+getexons <- function(start, end, n) {
+  rep(as.integer(start):as.integer(end), times = n)
+}
+
 ##Deletions
 
 #get the data
